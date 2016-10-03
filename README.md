@@ -1,9 +1,14 @@
+# Bem! Bem! - Demo
+
+Demo using the [bembem](https://github.com/hipstergoat/bembem) with gulp.js.
+
+---
 ## Usage
 
 ### Install
 
-`npm install bembem --save-dev`
+`npm install`
 
 ### Run locally
 
-`npm run watch`
+`npm run serve`
