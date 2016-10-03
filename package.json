@@ -1,7 +1,7 @@
 {
     "name": "bembem-test",
     "version": "1.0.0",
-    "description": "",
+    "description": "Demo for the use of bembem",
     "main": "index.js",
     "scripts": {
         "build": "gulp build",
@@ -9,8 +9,22 @@
         "serve": "gulp serve",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hipstergoat/bembem-demo.git"
+    },
+    "keywords": [
+        "bem",
+        "sass",
+        "pug",
+        "bemit"
+    ],
+    "author": "Carlos A. Cabrera (github.com/carlosacabrera)",
     "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hipstergoat/bembem/issues"
+    },
+    "homepage": "https://github.com/hipstergoat/bembem#readme",
     "devDependencies": {
         "bembem": "0.0.1",
         "browser-sync": "^2.17.0",
