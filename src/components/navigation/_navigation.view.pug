@@ -1,0 +1,22 @@
+include /bembem
+
+- var $prefix = 'item-'
+
++bem_scope({prefix: $prefix})
+	+block.UL.menu
+		+element.LI.item
+			+element.A.button(href="#", title="") Button 1
+		+element.LI.item
+			+element.A.button._active(href="#", title="") Button 2
+		+element.LI.item
+			+element.A.button(href="#", title="") Button 3
+	
+	// Reusing the Block "menu" with a modifier
+	+block.UL.menu._right
+		+element.LI.item
+			+element.A.button(href="#", title="") Button 1
+		+element.LI.item
+			+element.A.button._active(href="#", title="") Button 2
+		+element.LI.item
+			+element.A.button(href="#", title="") Button 3
+		

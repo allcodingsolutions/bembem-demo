@@ -1,0 +1,28 @@
+@import "bembem";
+// Prefix will be add in ANY class name. This is NOT required
+@include prefix("item") {
+    @include block("menu") {
+        float: left;
+        // This modifier only works for the Block "menu"
+        @include modifier("right") {
+            float: right;
+        }
+        // The elements are included inside of a Block to have a context
+        @include element("item") {
+            float: left;
+        }
+        @include element("button") {
+            display: block;
+            padding: 10px;
+            color: black;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+            // This is a modifier of the element "button"
+            @include modifier("active") {
+                background-color: red;
+            }
+        }
+    }
+}
